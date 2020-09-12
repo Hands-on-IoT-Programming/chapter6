@@ -26,7 +26,6 @@ WORKDIR /usr/src
 
 # All app files
 COPY ./scripts ./scripts
-COPY ./astropi ./astropi
 COPY weather_station.py ./
 
 # Start with a bash script
