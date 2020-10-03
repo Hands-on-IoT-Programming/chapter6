@@ -8,11 +8,13 @@ import os
 from datetime import datetime
 from threading import Timer
 
+timeOfRainbow = 5
 def exitfunc():
     print ("Exit Time", datetime.now())
+    print ("--- End of FIRST TEST")
     os._exit(0)
 
-Timer(5, exitfunc).start() # exit in 5 seconds
+Timer(timeOfRainbow, exitfunc).start() # exit in 5 seconds
 
 # Hues represent the spectrum of colors as values between 0 and 1. The range
 # is circular so 0 represents red, ~0.2 is yellow, ~0.33 is green, 0.5 is cyan,
@@ -33,6 +35,9 @@ hat = SenseHat()
 
 def scale(v):
     return int(v * 255)
+
+# Workflow execution starts
+print ("--- FIRST TEST: Show a dynamic rainbow on the LED matrix for ", timeOfRainbow, " seconds")
 
 while True:
     # Rotate the hues

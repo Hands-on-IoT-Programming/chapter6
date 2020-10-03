@@ -67,6 +67,10 @@ def move(selection, direction):
 
 hat = SenseHat()
 selection = 'T'
+
+# Workflow execution starts
+print ("--- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix", timeOfRainbow, " seconds")
+
 while True:
     display(hat, selection)
     event = hat.stick.wait_for_event()
@@ -77,4 +81,5 @@ while True:
         else:
             selection = move(selection, event.direction)
 hat.clear()
+print ("--- End of SECOND TEST")
 
