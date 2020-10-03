@@ -15,4 +15,4 @@ echo "Move the joystick to test I'm still alive..."
 
 echo "In parallel watch the environment conditions in the container's log..."
 # This script as well as those in ./astropi run with Python (current default in container image is Python2.7)
-./weather_station.py
+./scripts/weather_station.py
