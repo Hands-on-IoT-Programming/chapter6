@@ -26,7 +26,6 @@ WORKDIR /usr/src
 
 # All app files
 COPY ./scripts ./scripts
-COPY weather_station.py ./
 
 # Start with a bash script
 COPY start.sh ./
