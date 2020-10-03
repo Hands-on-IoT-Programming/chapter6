@@ -16,7 +16,7 @@ timeOfRainbow = 5
 sleep(timeOfRainbow + 15)
 
 print ("---- FOURTH TEST: Show the TEMPERATURE/HUMMIDITY/PRESSURE every ", timeUpdate, " seconds")
-print ("This is an infinite loop that runs concurrently with THIRD TEST (move dot with the joystick)")
+print ("---- This is an infinite loop that runs concurrently with THIRD TEST (move dot with the joystick)")
 
 while True:
     data['temperature'] = sense.get_temperature()
