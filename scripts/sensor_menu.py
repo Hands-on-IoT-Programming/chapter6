@@ -69,7 +69,7 @@ hat = SenseHat()
 selection = 'T'
 
 # Workflow execution starts
-print ("--- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix", timeOfRainbow, " seconds")
+print ("--- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix")
 
 while True:
     display(hat, selection)
