@@ -72,7 +72,7 @@ selection = 'T'
 # Workflow execution starts
 timeOfRainbow = 5
 sleep(timeOfRainbow) # Wait until rainbow is shown in the LED matrix for 5 seconds
-print ("--- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix")
+print ("-- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix")
 
 while True:
     display(hat, selection)
@@ -84,5 +84,5 @@ while True:
         else:
             selection = move(selection, event.direction)
 hat.clear()
-print ("--- End of SECOND TEST")
+print ("-- End of SECOND TEST (only if 'Q' item selected on time)")
 

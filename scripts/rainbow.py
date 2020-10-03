@@ -33,8 +33,8 @@ def scale(v):
 # How to execute the script for a given time span
 def exitfunc():
     hat.clear()
-    print ("Exit Time", datetime.now(), ".. Now clering LED matrix")
-    print ("--- End of FIRST TEST")
+    print ("Exit Time of Rainbow", datetime.now(), ".. Now clearing LED matrix")
+    print ("- End of FIRST TEST")
     os._exit(0)
 
 timeOfRainbow = 5
@@ -42,7 +42,7 @@ timeOfRainbow = 5
 Timer(timeOfRainbow, exitfunc).start() # exit in 5 seconds
 
 # Workflow execution starts
-print ("--- FIRST TEST: Show a dynamic rainbow on the LED matrix for ", timeOfRainbow, " seconds")
+print ("- FIRST TEST: Show a dynamic rainbow on the LED matrix for ", timeOfRainbow, " seconds")
 
 while True:
     # Rotate the hues

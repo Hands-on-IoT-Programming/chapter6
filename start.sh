@@ -13,9 +13,9 @@ echo "You can always read any of temperature, pressure or humidity with sensor_m
 # joystick_events.py shows the movable pixel on exiting sensor_menu.py
 echo "Move the joystick to test I'm still alive..."
 # Run concurrently with sensor_menu.py
-# Workflow waits (before starting) for timeOfRainbow=5s + 2s
+# Workflow waits (before starting) for timeOfRainbow=5s + 10s
 ./scripts/joystick_events.py &
 
 echo "In parallel watch the environment conditions in the container's log..."
-# Workflow waits (before starting) for timeOfRainbow=5s + 10s
+# Workflow waits (before starting) for timeOfRainbow=5s + 15s
 ./scripts/weather_station.py
