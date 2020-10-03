@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 from sense_hat import SenseHat
 from signal import pause
+from time import sleep
 
+timeOfRainbow = 5
+sleep(timeOfRainbow + 2) # Wait until rainbow is shown in the LED matrix for 5 seconds
 print ("--- THIRD TEST: Move a dot on the LED matrix using the joystick")
 print ("--- This is an event oriented program, so it's always listening to the joystick")
 
