@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from sense_hat import *
 import numpy as np
+from time import sleep
 
 # Draw the foreground (fg) into a numpy array
 Rd = (255, 0, 0)
