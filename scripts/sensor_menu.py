@@ -69,6 +69,8 @@ hat = SenseHat()
 selection = 'T'
 
 # Workflow execution starts
+timeOfRainbow = 5
+sleep(timeOfRainbow) # Wait until rainbow is show in the LED matrix for 5 seconds
 print ("--- SECOND TEST: Select with joystick for TEMPERATURE/HUMMIDITY/PRESSURE/Quit on the LED matrix")
 
 while True:

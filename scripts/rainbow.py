@@ -4,17 +4,11 @@ from time import sleep
 from sense_hat import SenseHat
 
 # Imports for executing the script a given number of seconds (5s)
+#   - See function 'exitfunc' below
 import os
 from datetime import datetime
 from threading import Timer
 
-timeOfRainbow = 5
-def exitfunc():
-    print ("Exit Time", datetime.now())
-    print ("--- End of FIRST TEST")
-    os._exit(0)
-
-Timer(timeOfRainbow, exitfunc).start() # exit in 5 seconds
 
 # Hues represent the spectrum of colors as values between 0 and 1. The range
 # is circular so 0 represents red, ~0.2 is yellow, ~0.33 is green, 0.5 is cyan,
@@ -35,6 +29,17 @@ hat = SenseHat()
 
 def scale(v):
     return int(v * 255)
+
+# How to execute the script for a given time span
+def exitfunc():
+    hat.clear()
+    print ("Exit Time", datetime.now(), ".. Now clering LED matrix")
+    print ("--- End of FIRST TEST")
+    os._exit(0)
+
+timeOfRainbow = 5
+
+Timer(timeOfRainbow, exitfunc).start() # exit in 5 seconds
 
 # Workflow execution starts
 print ("--- FIRST TEST: Show a dynamic rainbow on the LED matrix for ", timeOfRainbow, " seconds")
